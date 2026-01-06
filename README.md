@@ -25,7 +25,7 @@ make
 
 ## How it works
 
-The main goal of the program is to find and execute Unix commands submitted by the user. The specific approach developed allows the user to use as many pipes and execute as many commands as desired. It also includes interesting features, such as the implementation of the "here_doc" functionality. The user can decide whether to use standard input (fdi)/terminal or use an existing input file.
+The main goal of the program is to find and execute Unix commands submitted by the user. The specific approach developed allows the user to use two commands splitted by one pipe.
 
 To achieve the desire program it uses the execve function, this can result on different problems since as written on the documentation, the process which calls execve will die to replace it with the new one. As mentioned this can result on data loss problems.
 
